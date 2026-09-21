@@ -1,4 +1,22 @@
-# FAP Particle FX
+# Free Animation Power Particle FX
+<p align="center">
+  <a href="https://freeanimationpower.org"><img src="https://img.shields.io/badge/Web_Hub-freeanimationpower.org-ffdc00?style=for-the-badge" alt="Web Hub"></a>
+  <a href="https://www.youtube.com/@freeanimationpower"><img src="https://img.shields.io/badge/YouTube-@freeanimationpower-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
+  <a href="https://github.com/freeanimationpower"><img src="https://img.shields.io/badge/GitHub-freeanimationpower-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+</p>
+
+<p align="center">
+  <img src="docs/screenshot.png" alt="Free Particle FX — sistema de partículas con 54 presets" width="860">
+</p>
+
+## 🎬 Videos
+
+📺 Canal oficial: [@freeanimationpower](https://www.youtube.com/@freeanimationpower)
+
+| Vídeo | Título |
+|---|---|
+| <a href="https://youtu.be/30ZA1AQjZwI"><img src="https://i.ytimg.com/vi/30ZA1AQjZwI/hqdefault.jpg" width="240"></a> | [Efectos de humo, fuego, nieve y confeti para tus escenas](https://youtu.be/30ZA1AQjZwI) |
+| <a href="https://youtu.be/6ZgR7ANl--o"><img src="https://i.ytimg.com/vi/6ZgR7ANl--o/hqdefault.jpg" width="240"></a> | [Chispas, nieve y humo con pantalla verde: adiós a las búsquedas eternas](https://youtu.be/6ZgR7ANl--o) |
 
 Estudio de sistemas de particulas (motion graphics) del ecosistema [Free Animation Power](https://freeanimationpower.org).
 
