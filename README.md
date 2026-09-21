@@ -28,6 +28,30 @@ https://freeanimationpower.org/tools/particle-fx/
 
 ## Caracteristicas
 
+```mermaid
+flowchart LR
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffdc00', 'primaryBorderColor': '#1a1a1a', 'primaryTextColor': '#1a1a1a', 'lineColor': '#ff4200', 'fontFamily': 'Segoe UI'}}}%%
+    classDef ui fill:#ffdc00,stroke:#1a1a1a,color:#1a1a1a,stroke-width:2px;
+    classDef engine fill:#ff4200,stroke:#1a1a1a,color:#ffffff,stroke-width:2px;
+    classDef data fill:#1a1a1a,stroke:#ff4200,color:#ffffff,stroke-width:2px;
+    classDef ext fill:#ffffff,stroke:#1a1a1a,color:#1a1a1a,stroke-width:2px,stroke-dasharray:6 3;
+        PRE["🌟 54 presets en 7 familias<br/>Celebración · Fuego y luz · Naturaleza<br/>Espacio · Agua · Viento · Pixel FX"] --> ENG["⚙️ Motor de partículas<br/>cantidad · tamaño · velocidad · gravedad<br/>viento · turbulencia · vida · opacidad"]
+        subgraph AUTO["🔥 Pixel FX — autómata celular estilo DOOM"]
+            direction TB
+            CA["lava · humo · cascada · arena<br/>matrix · tinta · ondas · estática"]
+            LIFE["juego de la vida<br/>re-siembra periódica"]
+        end
+        ENG --> CA
+        ENG --> LIFE
+        ENG --> TIM["⏱️ Timeline 24/30/60 fps<br/>checkpointing + caché<br/>scrubbing perfecto"]
+        TIM --> VAL["✅ Validación de estado<br/>+ autoguardado localStorage"]
+        VAL --> EXP["📤 Exportación frame-accurate<br/>WebM alfa · MP4 · GIF transparente"]
+        class PRE ui
+        class ENG,AUTO engine
+        class TIM,VAL data
+        class EXP ext
+```
+
 - 54 sistemas en 7 familias: Celebracion, Fuego y luz, Naturaleza, Espacio, Agua, Viento y Pixel FX
 - **Pixel FX (motor de automata celular estilo DOOM)**: lava, humo pixel, cascada pixel, arena pixel, lluvia pixel, matrix, tinta, ondas pixel, estatica TV, juego de la vida, viento pixel, plasma, aurora pixel, niebla pixel y nebulosa pixel — cada uno con reglas propias de celulas, paleta dinamica y bloom
 - Juego de la vida con re-siembra periodica (gliders deterministicos) para evitar colapsos
