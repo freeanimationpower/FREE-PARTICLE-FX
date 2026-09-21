@@ -55,7 +55,7 @@ flowchart LR
 - Fuego real DOOM precalentado (siempre encendido) con paleta dinámica
 - Reglas directas (plasma, aurora píxel, niebla píxel, nebulosa píxel) calculadas por formula de tiempo: scrubbing perfecto
 - Controles globales adaptativos: Cantidad y Emisor se ocultan en la familia Píxel FX
-- Exportación WebM (canal alfa), MP4 y GIF con transparencia, 24/30/60 fps, con duracion exacta
+- Exportación WebM (canal alfa), MP4 y GIF con transparencia, 24/30/60 fps, con duración exacta
 - Guardar y abrir proyectos JSON (.particlefx) con validación de estado + autoguardado en localStorage
 - Buscador de sistemas por nombre en el panel derecho
 
@@ -65,7 +65,7 @@ flowchart LR
 
 El exportador de vídeo usa dos caminos:
 
-1. **requestFrame (preferido)**: el canvas se captura con `captureStream(0)` y cada frame se entrega explicitamente con `track.requestFrame()`. El vídeo resultante tiene duracion y contenido exactos, sin depender de la velocidad de la CPU.
+1. **requestFrame (preferido)**: el canvas se captura con `captureStream(0)` y cada frame se entrega explicitamente con `track.requestFrame()`. El vídeo resultante tiene duración y contenido exactos, sin depender de la velocidad de la CPU.
 2. **Pacing con deadlines absolutos (fallback)**: en navegadores sin `requestFrame`, cada frame se renderiza y se espera hasta su deadline absoluto `start + i*(1000/fps)`. El uso de deadlines absolutos elimina el error acumulativo del metodo anterior basado en sleep.
 
 El GIF no depende de tiempo real: se renderiza frame a frame con cesion de hilo (`await 0`).
@@ -86,7 +86,7 @@ El interruptor "Pixelar salida" aplica un post-proceso al final de `render()`: e
 - Emisor configurable: pantalla, centro, arriba o abajo
 - 9 paletas de color + paleta personalizada con 5 colores
 - Modos de mezcla: normal, aditivo y pantalla
-- Estelas de movimiento activables, bucle, semilla reproducible y boton aleatorio
+- Estelas de movimiento activables, bucle, semilla reproducible y botón aleatorio
 - Fondo activable o transparencia total (checkerboard en el escenario)
 - Exportación WebM (con canal alfa real), MP4 y GIF (con transparencia), 24/30/60 fps
 - Guardar y abrir proyectos JSON (.particlefx) + autoguardado en localStorage
