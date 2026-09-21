@@ -30,24 +30,17 @@ https://freeanimationpower.org/tools/particle-fx/
 
 ```mermaid
 flowchart LR
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffdc00', 'primaryBorderColor': '#1a1a1a', 'primaryTextColor': '#1a1a1a', 'lineColor': '#ff4200', 'fontFamily': 'Segoe UI'}}}%%
     classDef ui fill:#ffdc00,stroke:#1a1a1a,color:#1a1a1a,stroke-width:2px;
     classDef engine fill:#ff4200,stroke:#1a1a1a,color:#ffffff,stroke-width:2px;
     classDef data fill:#1a1a1a,stroke:#ff4200,color:#ffffff,stroke-width:2px;
-    classDef ext fill:#ffffff,stroke:#1a1a1a,color:#1a1a1a,stroke-width:2px,stroke-dasharray:6 3;
-        PRE["🌟 54 presets en 7 familias<br/>Celebración · Fuego y luz · Naturaleza<br/>Espacio · Agua · Viento · Pixel FX"] --> ENG["⚙️ Motor de partículas<br/>cantidad · tamaño · velocidad · gravedad<br/>viento · turbulencia · vida · opacidad"]
-        subgraph AUTO["🔥 Pixel FX — autómata celular estilo DOOM"]
-            direction TB
-            CA["lava · humo · cascada · arena<br/>matrix · tinta · ondas · estática"]
-            LIFE["juego de la vida<br/>re-siembra periódica"]
-        end
-        ENG --> CA
-        ENG --> LIFE
-        ENG --> TIM["⏱️ Timeline 24/30/60 fps<br/>checkpointing + caché<br/>scrubbing perfecto"]
-        TIM --> VAL["✅ Validación de estado<br/>+ autoguardado localStorage"]
-        VAL --> EXP["📤 Exportación frame-accurate<br/>WebM alfa · MP4 · GIF transparente"]
+    classDef ext fill:#ffffff,stroke:#1a1a1a,color:#1a1a1a,stroke-width:2px;
+        PRE["54 presets en 7 familias<br/>Celebracion · Fuego y luz · Naturaleza<br/>Espacio · Agua · Viento · Pixel FX"] --> ENG["Motor de particulas<br/>cantidad · tamano · velocidad · gravedad<br/>viento · turbulencia · vida · opacidad"]
+        ENG --> CA["Pixel FX — automata celular estilo DOOM<br/>lava · humo · cascada · arena · matrix<br/>tinta · ondas · estatica · juego de la vida"]
+        ENG --> TIM["Timeline 24/30/60 fps<br/>checkpointing + cache<br/>scrubbing perfecto"]
+        TIM --> VAL["Validacion de estado<br/>+ autoguardado localStorage"]
+        VAL --> EXP["Exportacion frame-accurate<br/>WebM alfa · MP4 · GIF transparente"]
         class PRE ui
-        class ENG,AUTO engine
+        class ENG,CA engine
         class TIM,VAL data
         class EXP ext
 ```
