@@ -24,7 +24,7 @@ Genera efectos animados en el navegador con 54 sistemas editables en 7 familias:
 
 ## Demo en vivo
 
-https://freeanimationpower.github.io/FAP_PARTICLE_FX/
+https://freeanimationpower.org/tools/particle-fx/
 
 ## Caracteristicas
 
